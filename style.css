@@ -1,0 +1,48 @@
+
+   /*
+   off white  #EEEEEE
+   light teal #AAD8D3
+   teal       #00ADB5
+   slate      #393E46
+   */
+
+*{
+  font-family: cursive;
+  color: #AAD8D3;
+}
+nav{
+  background-color:#00ADB5;
+  color: #F0A500;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 12%;
+}
+li{
+  color: #393E46;
+}
+nav li{
+  display: inline-block;
+  margin: 10 20px;
+  font-weight: lighter;
+}
+nav li:hover{
+  font-weight: 1000;
+  color: black;
+}
+.gitLink{
+  width: 7%;
+  position: fixed;
+  right: 40%;
+  top: 2%;
+}
+.gitLink:hover{
+  width:7.5%;
+  right: 39.75%;
+  top: 1.5%;
+}
+body{
+  background-color:#393E46;
+  color: #AAD8D3
+}

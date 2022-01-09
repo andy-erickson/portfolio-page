@@ -11,6 +11,7 @@
   color: #AAD8D3;
 }
 nav{
+  z-index:500;
   background-color:#00ADB5;
   color: #F0A500;
   position: fixed;
@@ -51,4 +52,16 @@ nav li:hover{
 body{
   background-color:#393E46;
   color: #AAD8D3
+}
+.projects{
+  position: relative;
+  left: 5%;
+}
+.resumeBox{
+  background-color: #AAD8D3;
+  height: 65%;
+  width:75%;
+  position: relative;
+  left: 12.5%;
+  top: 20%;
 }

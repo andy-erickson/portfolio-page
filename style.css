@@ -1,67 +1,147 @@
 
-   /*
-   off white  #EEEEEE
-   light teal #AAD8D3
-   teal       #00ADB5
-   slate      #393E46
-   */
+/*
+off white  #EEEEEE
+light teal #AAD8D3
+teal       #00ADB5
+slate      #393E46
+*/
 
 *{
-  font-family: Helvetica;
-  color: #AAD8D3;
+font-family: Helvetica;
+color: #AAD8D3;
 }
 nav{
-  z-index:500;
-  background-color:#00ADB5;
-  color: #F0A500;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  width: 100%;
-  /*height: 13%;*/
-  height: 85px;
-  min-width: 810px;
+z-index:500;
+background-color:#00ADB5;
+color: #F0A500;
+position: fixed;
+top: 0px;
+right: 0px;
+width: 100%;
+/*height: 13%;*/
+height: 85px;
+min-width: 810px;
 }
 nav ul{
-  padding-right: 1%;
+padding-right: 1%;
 
 
 }
 nav li{
-  color: #393E46;
-  margin: 0 1.5%;
-  display: inline-block;
-  min-width: 20px;
+color: #393E46;
+margin: 0 1.5%;
+display: inline-block;
+min-width: 20px;
 }
 nav li:hover{
-  opacity: 0.8;
-  margin: 0 1.6%;
+opacity: 0.8;
+margin: 0 1.6%;
 }
 .gitLink{
-  position: fixed;
-  right: 10%;
-  top: 1%;
-  height: 60px;
-  width: 70px;
+position: fixed;
+right: 10%;
+top: 1%;
+height: 60px;
+width: 70px;
 }
 .gitLink:hover{
-  height: 65px;
-  width: 75px;
-  opacity: 0.8;
+height: 65px;
+width: 75px;
+opacity: 0.8;
 }
 body{
-  background-color:#393E46;
-  color: #AAD8D3
+background-color:#393E46;
+color: #AAD8D3
 }
 .projects{
-  position: relative;
-  left: 5%;
+position: relative;
+left: 5%;
 }
 .resumeBox{
+background-color: #AAD8D3;
+height: 65%;
+width:75%;
+position: relative;
+left: 12.5%;
+top: 20%;
+}
+
+#sortingBackground{
   background-color: #AAD8D3;
-  height: 65%;
-  width:75%;
-  position: relative;
-  left: 12.5%;
-  top: 20%;
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  right: 25%;
+  bottom: 25%;
+
+}
+.evens{
+  background-color: #00ADB5;
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  right: 71%;
+  bottom: 26%;
+}
+
+.odds{
+  background-color: #393E46;
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  bottom: 26%;
+  right: 67%;
+
+}
+
+#index2{
+  right: 63%;
+}
+#index3{
+  right: 58.9%;
+}
+#index4{
+  right: 54.8%;
+}
+#index5{
+  right: 50.7%;
+}
+#index6{
+  right: 46.6%;
+}
+#index7{
+  right: 42.5%;
+}
+#index8{
+  right: 38.4%;
+}
+#index9{
+  right: 34.3%;
+}
+#index10{
+  right: 30.2%;
+}
+#index11{
+  right: 26%;
+}
+
+.sortButton{
+  width: 10%;
+  height: 40px;
+  position: absolute;
+  top: 26%;
+  right: 63%;
+}
+#insertionButton{
+  right: 52%;
+}
+#selectionButton{
+  right: 41%;
+}
+#startButton{
+  width: 13%;
+  height: 65px;
+  position: absolute;
+  top: 26%;
+  right: 27%;
 }

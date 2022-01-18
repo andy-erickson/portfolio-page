@@ -11,7 +11,7 @@ const gameState = {
 function create() {
   let xPosition = 65;
   bubbleButton = this.add.rectangle(100,70,150,50,gameState.teal).setInteractive();
-  bubbleButton.on('pointerdown', function swap(gameState.heights[0], gameState.heights[1]));
+  //bubbleButton.on('pointerdown', swap(gameState.heights[0], gameState.heights[1]));
   for (let i = 0; i < 10; i++) {
     gameState.heights.push(Math.ceil(Math.random() * 200));
     gameState.rects.push(this.add.rectangle(xPosition,300,40,gameState.heights[i],gameState.lightTeal).setInteractive());
@@ -28,7 +28,7 @@ function update() {
     }
   }
 
-  function swap(xp, yp){
+  /*function swap(xp, yp){
     let temp = gameState.heights[xp];
     //var temp2 = gameState.rects[xp].height;
     gameState.heights[xp] = gameState.heights[yp];

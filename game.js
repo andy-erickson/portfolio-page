@@ -10,7 +10,7 @@ let gameState = {
 
 function create() {
   let xPosition = 65;
-  bubbleButton = this.add.rectangle(100,25,150,50,gameState.teal).setInteractive();
+  //bubbleButton = this.add.rectangle(100,25,150,50,gameState.teal).setInteractive();
   for (let i = 0; i < 10; i++) {
     gameState.rects.push(this.add.rectangle(xPosition,400,40,250,gameState.lightTeal).setInteractive());
     gameState.heights.push(Math.ceil(Math.random() * 200));
@@ -30,8 +30,15 @@ function create() {
 
       });
     xPosition += 60;
-
     }
+    bubbleButton = this.add.rectangle(100,25,150,50,gameState.teal).setInteractive();
+    bubbleButton.on('pointerdown',function(){
+
+      console.log("ClIcK");
+      console.log(gameState.heights);
+      bubbleSort(gameState.heights,gameState.heights.length + 1);
+      console.log(gameState.heights);
+    });
   }
 
 
@@ -44,8 +51,9 @@ function update() {
 
     }
   }
-/*
-  function swap(xp, yp){
+
+//good to here
+  function swap(arr, xp, yp){
     var temp = gameState.heights[xp];
     //var temp2 = gameState.rects[xp].height;
     gameState.heights[xp] = gameState.heights[yp];
@@ -53,9 +61,8 @@ function update() {
     gameState.heights[yp] = temp;
     //gameState.rects[yp].height = temp2;
   }
-
 // An optimized version of Bubble Sort
-/*
+
 function bubbleSort( arr, n)
 {
 var i, j;
@@ -63,17 +70,15 @@ for (i = 0; i < n-1; i++)
 {
     for (j = 0; j < n-i-1; j++)
     {
-
         if (arr[j] > arr[j+1])
         {
         swap(arr,j,j+1);
-
         }
     }
+}
+}
 
-}
-}
-*/
+//ending here
 //}
 const config = {
   width: 700,

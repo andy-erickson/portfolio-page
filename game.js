@@ -10,9 +10,9 @@ let gameState = {
 
 function create() {
   let xPosition = 65;
-  bubbleButton = this.add.rectangle(100,70,150,50,gameState.teal).setInteractive();
+  bubbleButton = this.add.rectangle(100,25,150,50,gameState.teal).setInteractive();
   for (let i = 0; i < 10; i++) {
-    gameState.rects.push(this.add.rectangle(xPosition,300,40,250,gameState.lightTeal).setInteractive());
+    gameState.rects.push(this.add.rectangle(xPosition,400,40,250,gameState.lightTeal).setInteractive());
     gameState.heights.push(Math.ceil(Math.random() * 200));
     //gameState.rects = [];
     gameState.rects[i].height = gameState.heights[i];
@@ -38,7 +38,7 @@ function create() {
 function update() {
   for (let i = 0; i < 10; i++) {
     gameState.rects[i].height = gameState.heights[i];
-    gameState.rects[i].y =  300 - (0.5 * gameState.rects[i].height);
+    gameState.rects[i].y =  400 - (0.5 * gameState.rects[i].height);
     gameState.rects[i].on('pointerover', function(){this.fillColor = gameState.teal;});
     gameState.rects[i].on('pointerout', function(){this.fillColor = gameState.lightTeal;});
 
@@ -77,7 +77,7 @@ for (i = 0; i < n-1; i++)
 //}
 const config = {
   width: 700,
-  height: 600,
+  height: 800,
   backgroundColor: gameState.slate,
   scene: { create, update
 
